@@ -5,30 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5450cbc-158e-41c3-8769-da4c0acccf19" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/MonitoringSystem.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/metrics/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/metrics/http_metrics.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/metrics/system_metrics.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/middleware/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/middleware/metrics_middleware.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/routers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/routers/api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/routers/health.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diagnostic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prometheus.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start_app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alertmanager.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diagnose_docker.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/images/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fix_grafana.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fix_monitoring.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fix_prometheus.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fix_prometheus.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grafana/dashboards/fastapi-metrics.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grafana/provisioning/dashboards/dashboard.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grafana/provisioning/datasources/prometheus.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prometheus-backup-current.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prometheus-backup.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prometheus-minimal.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prometheus-rules.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prometheus-simple.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/setup_monitoring.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple-dashboard.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/metrics/system_metrics.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/metrics/system_metrics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prometheus.yml" beforeDir="false" afterPath="$PROJECT_DIR$/prometheus.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +55,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -66,6 +65,36 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MonitoringSystem" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -82,7 +111,7 @@
       <option name="presentableId" value="Default" />
       <updated>1752071350777</updated>
       <workItem from="1752071351791" duration="54000" />
-      <workItem from="1752071415347" duration="3091000" />
+      <workItem from="1752071415347" duration="9948000" />
     </task>
     <servers />
   </component>
@@ -90,7 +119,7 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/MonitoringSystem$main.coverage" NAME="main Coverage Results" MODIFIED="1752075003257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
+    <SUITE FILE_PATH="coverage/MonitoringSystem$main.coverage" NAME="main Coverage Results" MODIFIED="1752081317643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
     <SUITE FILE_PATH="coverage/MonitoringSystem$diagnostic.coverage" NAME="diagnostic Coverage Results" MODIFIED="1752074641159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MonitoringSystem$test_app.coverage" NAME="test_app Coverage Results" MODIFIED="1752074372527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MonitoringSystem$start_app.coverage" NAME="start_app Coverage Results" MODIFIED="1752074744353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
