@@ -5,29 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5450cbc-158e-41c3-8769-da4c0acccf19" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/alertmanager.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diagnose_docker.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fix_grafana.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fix_monitoring.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fix_prometheus.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fix_prometheus.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grafana/dashboards/fastapi-metrics.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grafana/provisioning/dashboards/dashboard.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grafana/provisioning/datasources/prometheus.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prometheus-backup-current.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prometheus-backup.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prometheus-minimal.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prometheus-rules.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prometheus-simple.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/setup_monitoring.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple-dashboard.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/metrics/system_metrics.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/metrics/system_metrics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prometheus.yml" beforeDir="false" afterPath="$PROJECT_DIR$/prometheus.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by (le)).png" beforeDir="false" afterPath="$PROJECT_DIR$/images/response_time_histogram.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +45,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\USER\PycharmProjects\MonitoringSystem\images" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MonitoringSystem" />
@@ -111,7 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1752071350777</updated>
       <workItem from="1752071351791" duration="54000" />
-      <workItem from="1752071415347" duration="9948000" />
+      <workItem from="1752071415347" duration="10492000" />
     </task>
     <servers />
   </component>

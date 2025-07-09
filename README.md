@@ -80,7 +80,7 @@ The following screenshots show real metrics data from a running FastAPI applicat
 *Memory consumption tracking for both FastAPI application and Prometheus server*
 
 #### Response Time Metrics
-![Response Time Histogram](images/histogram_quantile(0.95,%20sum(rate(http_request_duration_seconds_bucket[5m])))%20by%20(le)).png)
+![Response Time Histogram](images/response_time_histogram.png)
 *HTTP request duration histogram showing response time distribution (95th percentile calculation)*
 
 ### System Metrics
